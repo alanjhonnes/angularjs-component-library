@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "dbaeumer.vscode-eslint",
+        "oderwat.indent-rainbow",
+        "visualstudioexptteam.vscodeintellicode",
+        "vscode-icons-team.vscode-icons",
+
+    ]
+}
