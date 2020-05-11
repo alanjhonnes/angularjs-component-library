@@ -20,7 +20,7 @@ export class SafraWalletButton implements ng.IComponentController {
 
     constructor() {
         console.log('safra wallet button initialized');
-    }
+    } 
 }
 
 angular.module(BUTTON_MODULE)
@@ -28,7 +28,7 @@ angular.module(BUTTON_MODULE)
         bindings: {
             text: '<'
         },
-        controller: SafraWalletButton,
+        controller: SafraWalletButton, 
         // templateUrl: "./button.component.html",
         template: `
 <div>
@@ -37,8 +37,8 @@ angular.module(BUTTON_MODULE)
     <span ng-click="$ctrl.add()">+</span>
 </div>
 
-<div ng-repeat="texto in $ctrl.textos">
+<div ng-repeat="texto in $ctrl.textos"> 
         {{texto}}
 </div>
-        `,
+        `, 
     })

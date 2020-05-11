@@ -4,7 +4,7 @@ const ForkTsCheckerNotifierWebpackPlugin = require('fork-ts-checker-notifier-web
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
-const main = [
+const index = [
     './src/index.ts'
 ];
 
@@ -12,7 +12,7 @@ module.exports = {
     target: 'web',
     context: process.cwd(), // to automatically find tsconfig.json
     entry: {
-        main
+        index
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -20,10 +20,10 @@ module.exports = {
         publicPath: "/",
     },
     plugins: [
-        new ForkTsCheckerWebpackPlugin({
-            eslint: true,
-        }),
-        new ForkTsCheckerNotifierWebpackPlugin({ title: 'TypeScript', excludeWarnings: false }),
+        // new ForkTsCheckerWebpackPlugin({
+        //     eslint: true,
+        // }),
+        // new ForkTsCheckerNotifierWebpackPlugin({ title: 'TypeScript', excludeWarnings: false }),
         new ExtractCssChunks({}),
     ],
     module: {
@@ -33,9 +33,6 @@ module.exports = {
                 use: [
                     {
                         loader: 'ts-loader',
-                        options: {
-                            transpileOnly: true,
-                        }
                     }
                 ]
             },
