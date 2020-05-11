@@ -9,6 +9,7 @@ const main = [
 ];
 
 module.exports = {
+    target: 'web',
     context: process.cwd(), // to automatically find tsconfig.json
     entry: {
         main
@@ -34,12 +35,6 @@ module.exports = {
                         loader: 'ts-loader',
                         options: {
                             transpileOnly: true,
-                            compilerOptions: {
-                                outDir: './dist',
-                                "declaration": true,                   /* Generates corresponding '.d.ts' file. */
-                                "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
-                                "sourceMap": true,                     /* Generates corresponding '.map' file. */
-                            }
                         }
                     }
                 ]

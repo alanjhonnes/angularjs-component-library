@@ -1,6 +1,7 @@
 import { BUTTON_MODULE } from "../../buttons.module";
 import './button.component.scss';
 
+
 export class SafraWalletButton implements ng.IComponentController {
 
     static readonly $inject = [];
