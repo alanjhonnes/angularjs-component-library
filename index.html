@@ -1,8 +1,36 @@
 <html ng-app="sfw.button">
     <head>
         <link rel="stylesheet" href="./dist/index.css">
-        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/tslib/tslib.js"></script>
+
+        <!-- polyfills-->
+        <script src="node_modules/core-js-bundle/index.js"></script>
+        <script src="node_modules/@webcomponents/custom-elements/custom-elements.min.js"></script>
+        <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.3/custom-elements-es5-adapter.js"></script>
+        <!-- end polyfills-->
+        <script src="node_modules/rxjs/bundles/rxjs.umd.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+        <script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+        <script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+        <script src="node_modules/@angular/common/bundles/common-testing.umd.js"></script>
+        <script src="node_modules/@angular/common/bundles/common-http.umd.js"></script>
+        <script src="node_modules/@angular/animations/bundles/animations.umd.js"></script>
+        <script src="node_modules/@angular/animations/bundles/animations-browser.umd.js"></script>
+        <script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+        <script src="node_modules/@angular/elements/bundles/elements.umd.js"></script>
+        <script src="node_modules/@angular/forms/bundles/forms.umd.js"></script>
+        <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+        <script src="node_modules/@angular/platform-browser/bundles/platform-browser-animations.umd.js"></script>
+        <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+        <script src="node_modules/@angular/router/bundles/router.umd.js"></script>
+        <script src="node_modules/@angular/router/bundles/router-testing.umd.js"></script>
+        <script src="node_modules/mjv-component-library/bundles/mjv-component-library.umd.js"></script>
+        <script src="node_modules/journey-a/bundles/journey-a.umd.js"></script>
+        <script src="node_modules/journey-b/bundles/journey-b.umd.js"></script>
         <script src="./dist/index.js"></script>
+        <base href="/">
     </head>
     <body>
         <sfw-button text="'Testeeee'"></sfw-button>

@@ -50,9 +50,24 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@angular/animations": "~9.1.9",
+    "@angular/common": "~9.1.9",
+    "@angular/compiler": "~9.1.9",
+    "@angular/core": "~9.1.9",
+    "@angular/elements": "^9.1.9",
+    "@angular/forms": "~9.1.9",
+    "@angular/platform-browser": "~9.1.9",
+    "@angular/platform-browser-dynamic": "~9.1.9",
+    "@angular/router": "~9.1.9",
     "@types/angular": "^1.7.0",
+    "@uirouter/angularjs": "^1.0.26",
+    "@webcomponents/custom-elements": "^1.4.1",
     "angular": "^1.7.9",
-    "node-sass": "^4.14.1"
+    "core-js-bundle": "^3.6.5",
+    "node-sass": "^4.14.1",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
   },
   "config": {
     "commitizen": {
